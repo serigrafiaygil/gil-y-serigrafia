@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serigrafía y Gil - San Luis Potosí</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f4f4f4; }
+    header { background-color: #003366; color: white; padding: 20px; text-align: center; }
+    nav { background: #004080; text-align: center; padding: 10px 0; }
+    nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .card { background: white; padding: 30px; margin: 20px 0; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    h2 { color: #003366; }
+    form input, form select, form button, form textarea {
+      display: block; width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;
+    }
+    form button { background-color: #003366; color: white; border: none; font-size: 16px; cursor: pointer; }
+    form button:hover { background-color: #002244; }
+    .contact-links a { display: block; margin: 5px 0; color: #004080; font-weight: bold; text-decoration: none; }
+    img.icon { width: 100px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Serigrafía y Gil" class="icon">
+    <h1>Serigrafía y Gil</h1>
+    <p>Impresiones de calidad en San Luis Potosí</p>
+  </header>
+
+  <nav>
+    <a href="#nosotros">NOSOTROS</a>
+    <a href="#contacto">CONTÁCTANOS</a>
+    <a href="#pedido">REALIZA TU PEDIDO</a>
+  </nav>
+
+  <section id="nosotros">
+    <div class="card">
+      <h2>VISIÓN</h2>
+      <p>Ser la imprenta de referencia en San Luis Potosí, reconocida por nuestra calidad, confianza y compromiso con el desarrollo local...</p>
+      <img src="https://cdn.pixabay.com/photo/2015/01/08/18/25/office-593359_960_720.jpg" width="100%" alt="Visión">
+    </div>
+    <div class="card">
+      <h2>MISIÓN</h2>
+      <p>Brindar servicios de impresión de calidad a empresas, emprendedores y particulares en San Luis Potosí...</p>
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/01/21/print-shop-1868523_960_720.jpg" width="100%" alt="Misión">
+    </div>
+    <div class="card">
+      <h2>OBJETIVO</h2>
+      <p>Satisfacer las necesidades de impresión de nuestros clientes mediante un servicio eficiente, accesible y personalizado...</p>
+      <img src="https://cdn.pixabay.com/photo/2016/11/23/15/28/color-1851482_960_720.jpg" width="100%" alt="Objetivo">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="card">
+      <h2>¡CONTÁCTANOS!</h2>
+      <div class="contact-links">
+        <a href="https://maps.google.com/?q=rep%C3%BAblica+400+san+luis+potos%C3%AD" target="_blank">🌐 República No. 400, San Luis Potosí</a>
+        <a href="tel:4442141572">📞 444 214 1572</a>
+        <a href="mailto:serigrafiaygil@hotmail.com">📧 serigrafiaygil@hotmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="pedido">
+    <div class="card">
+      <h2>REALIZA TU PEDIDO</h2>
+      <form action="https://formsubmit.co/pedidosseriygil@outlook.com" method="POST" enctype="multipart/form-data">
+        <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+        <input type="tel" name="Teléfono" placeholder="Tu Número de Contacto" required>
+
+        <select name="Tipo de Producto" required>
+          <option value="">Selecciona el tipo de producto</option>
+          <option value="Playera">Playera</option>
+          <option value="Taza">Taza</option>
+          <option value="Gorra">Gorra</option>
+          <option value="Cartel">Cartel</option>
+          <option value="Bolsa">Bolsa</option>
+        </select>
+
+        <input type="text" name="Medidas" placeholder="Ej: 20x30 cm" required>
+        <input type="text" name="Color" placeholder="Color de Impresión" required>
+        <input type="text" name="Tamaño de Impresión" placeholder="Ej: Grande, Mediano, Chico" required>
+        <input type="text" name="Posición de Impresión" placeholder="Ej: Frente, Espalda, Manga" required>
+
+        <label>Sube tu diseño:</label>
+        <input type="file" name="Archivo" accept="image/*" required>
+
+        <input type="hidden" name="_subject" value="Nuevo Pedido de Serigrafía y Gil">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+
+        <button type="submit">Enviar Pedido</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
